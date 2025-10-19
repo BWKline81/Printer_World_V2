@@ -1,0 +1,18 @@
+@import "../utilities/Colors.css";
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.Header_container {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: none;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}

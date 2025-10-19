@@ -1,0 +1,52 @@
+@import "../utilities/Colors.css";
+@import "../utilities/Header.css";
+
+.container {
+  background-color: var(--accent-color-dark);
+  width: 30%;
+  min-width: 30%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  color: var(--secondary-color);
+  margin-left: 2.5%;
+  z-index: 3;
+}
+
+.heading_container {
+  height: 25%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 2.5%;
+}
+
+.icon {
+  background-color: var(--primary-color);
+  font-size: 2rem;
+  border-radius: 50px;
+  width: 10%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review_wrap {
+  height: 70%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.review {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
