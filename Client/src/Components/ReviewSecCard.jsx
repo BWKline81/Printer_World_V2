@@ -18,7 +18,11 @@ const ReviewsSecCard = (props) => {
       }}
     >
       <div className={styles.heading_container}>
-        <motion.div whileHover={{ scale: 1.05 }} className={styles.icon}>
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          className={styles.icon}
+          style={{ backgroundColor: props.color }}
+        >
           {props.name[0]}
         </motion.div>
         <motion.h2

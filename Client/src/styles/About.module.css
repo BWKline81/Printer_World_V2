@@ -1,0 +1,89 @@
+@import "../utilities/Colors.css";
+@import "../utilities/Header.css";
+
+.container {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.Header_container {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: none;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.content_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  flex-direction: column;
+  color: var(--secondary-color);
+}
+
+.content {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image_container {
+  height: 80%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.text_container {
+  width: 50%;
+  height: 80%;
+  font-size: 1.5rem;
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.text_container h2 {
+  font-size: 3rem;
+  text-align: left;
+  width: 100%;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.text_container p {
+  display: inline-block;
+}
+
+.word_span {
+  display: inline-block;
+}
+
+.background_addon {
+  position: fixed;
+  top: 20%;
+  left: 40%;
+  rotate: -45deg;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+  z-index: -1;
+}

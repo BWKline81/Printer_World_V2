@@ -8,6 +8,8 @@ import Header from "../Components/Header";
 import HomeImage from "../Components/HomeImage";
 import HomeIntroSec from "../Components/HomeIntroSec";
 import ReviewsSec from "../Components/ReviewsSec";
+import CTAHome from "../Components/CTAHome";
+import Footer from "../Components/Footer";
 // Assets
 import Home_Image from "../assets/Home_Image.jpg";
 
@@ -32,6 +34,8 @@ const Home = () => {
       </div>
       <HomeIntroSec />
       <ReviewsSec />
+      <CTAHome />
+      <Footer />
     </div>
   );
 };

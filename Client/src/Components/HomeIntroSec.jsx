@@ -30,7 +30,7 @@ const HomeIntroSec = () => {
         "Have a 3D model ready? Upload your design files and let us handle the printing with precision and care.",
       img: CreateImage,
       delay: 400,
-      link: "/uploads",
+      link: "/upload",
       cardType: "Dark",
     },
     {

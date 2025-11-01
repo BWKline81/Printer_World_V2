@@ -4,7 +4,7 @@ import styles from "../styles/ReviewsSec.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { motion, useMotionValue, animate } from "motion/react";
-import ReviewSecCard from "./ReviewSecCard";
+import ReviewSecCard from "../Components/ReviewSecCard";
 
 const ReviewsSec = () => {
   useEffect(() => {

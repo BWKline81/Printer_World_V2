@@ -76,7 +76,7 @@ export default function Header() {
             >
               <motion.button
                 className={styles.pressable}
-                onClick={() => navigateTo("/uploads")}
+                onClick={() => navigateTo("/upload")}
                 whileHover={{ scale: 1.1, rotate: 10 }}
                 whileTap={{ scale: 0.95, rotate: 0 }}
               >
