@@ -98,7 +98,7 @@
 }
 
 .upload_label {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--secondary-color);
   text-align: center;
   position: absolute;
@@ -263,10 +263,11 @@
 .color_highlight {
   height: 10%;
   width: 100%;
-
   position: absolute;
   top: 0%;
   left: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .mat_highlight {
@@ -274,7 +275,7 @@
 }
 
 .upload_button {
-  width: 30%;
+  width: 40%;
   height: 10%;
   display: flex;
   justify-content: center;
@@ -328,4 +329,27 @@
 .upload_button:active {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
   color: var(--secondary-color);
+}
+
+.background_Addon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  rotate: 45deg;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  background-color: var(--accent-color);
+}
+
+.background_AddonB {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 30%;
+  left: -70%;
+  rotate: 45deg;
+  z-index: -1;
+  background-color: var(--accent-color-dark);
 }

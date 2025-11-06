@@ -9,6 +9,12 @@ import * as motion from "motion/react-client";
 import Image from "../assets/ok.jpg";
 
 const Contracting = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+    window.scrollTo(0, 0);
+    document.title = "Printer World | Contracting";
+  }, []);
+
   const FAQquesAns = [
     {
       Ques: "How does the contracting program work?",
@@ -107,7 +113,11 @@ const Contracting = () => {
         </div>
         <div className={styles.content_container}>
           <div className={styles.image_contact_container}>
-            <div className={styles.image_desc_container}>
+            <div
+              className={styles.image_desc_container}
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
               <motion.div
                 className={styles.image}
                 style={{ backgroundImage: `url(${Image})` }}
@@ -132,7 +142,11 @@ const Contracting = () => {
                 soon as possible.
               </motion.p>
             </div>
-            <div className={styles.contact_container}>
+            <div
+              className={styles.contact_container}
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
               <motion.form onSubmit={onSubmit} className={styles.form}>
                 <div className={styles.input_box}>
                   <input
@@ -204,6 +218,8 @@ const Contracting = () => {
                 className={styles.FAQ_grouping}
                 key={index}
                 style={{ height: FAQopen[index] === false ? "10vh" : "25vh" }}
+                data-aos={index % 2 !== 0 ? "fade-left" : "fade-right"}
+                data-aos-delay={index * 100}
               >
                 <motion.div
                   className={styles.FAQ_ques}

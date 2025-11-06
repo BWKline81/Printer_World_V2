@@ -1,0 +1,249 @@
+@import "../utilities/Colors.css";
+@import "../utilities/Header.css";
+
+.container {
+  width: 100%;
+  height: 130vh;
+  margin: 0;
+  padding: 0;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form_wrap {
+  width: 50%;
+  height: 500vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border: none;
+  border-radius: 0px;
+  background-color: var(--primary-color);
+  box-shadow: none;
+  list-style-type: none;
+}
+
+.input_wrap {
+  width: 30%;
+  height: 0%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+}
+
+.radio_wrap {
+  width: 10%;
+  height: 0%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+}
+
+.order_info {
+  height: 15vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.order_info h2 {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  display: inline;
+}
+
+.input {
+  width: 60%;
+  height: 3vh;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  box-shadow: none;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  caret-color: var(--accent-color);
+  outline: none;
+}
+
+.input_label {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+}
+
+.radio_input {
+  appearance: none;
+  background-color: var(--primary-color);
+  width: 0.75vw;
+  height: 0.75vh;
+  border-radius: 50px;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: "Poppins", "Rubik", sans-serif, Arial, Helvetica, sans-serif;
+  outline: none;
+  display: flex;
+  display: grid;
+  place-content: center;
+}
+.radio_input::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  box-shadow: inset 1em 1em var(--accent-color);
+  transition: 120ms transform ease-in-out;
+}
+
+.radio_input:checked::before {
+  transform: scale(1);
+}
+
+.order_button,
+.back_button,
+.reset_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.order_button,
+.reset_button {
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  width: 10%;
+  height: 7.5%;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.order_button {
+  background-color: var(--accent-color);
+}
+
+.reset_button {
+  background-color: rgb(167, 0, 0);
+}
+
+.back_button {
+  color: var(--secondary-color);
+  background-color: grey;
+  border: 2px solid var(--secondary-color);
+  width: 2.5vw;
+  height: 5vh;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+
+.order_button::before,
+.back_button::before,
+.reset_button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+  transform-origin: left;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.order_button::before,
+.reset_button::before {
+  border-radius: 15px;
+}
+
+.back_button::before {
+  border-radius: 10px;
+}
+
+.order_button::before {
+  background-color: var(--secondary-color);
+}
+
+.back_button::before {
+  background-color: rgb(73, 73, 73);
+}
+
+.reset_button::before {
+  background-color: rgb(255, 0, 0);
+}
+
+.order_button:hover::before,
+.back_button:hover::before,
+.reset_button:hover::before {
+  transform: scaleX(1);
+}
+
+.order_button:hover {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  color: var(--accent-color);
+}
+
+.back_button:hover {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  color: var(--secondary-color);
+}
+
+.reset_button:hover {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+}
+
+.order_button:active::before {
+  background-color: var(--accent-color-dark);
+}
+
+.back_button:active::before {
+  background-color: var(--secondary-color);
+}
+
+.reset_button:active::before {
+  background-color: rgb(80, 0, 0);
+}
+
+.order_button:active {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  color: var(--secondary-color);
+}
+
+.reset_button:active {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+}
+
+.back_button:active {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  color: var(--primary-color);
+}

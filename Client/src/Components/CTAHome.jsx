@@ -79,7 +79,7 @@ const CTAHome = () => {
                 data-aos-delay="300"
                 key={index}
               >
-                <Link to="/uploads" className={styles.content_link}>
+                <Link to="/upload" className={styles.content_link}>
                   <motion.h2
                     className={styles.content_title}
                     whileHover={{

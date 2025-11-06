@@ -130,6 +130,8 @@ const Upload = () => {
 
   return (
     <div className={styles.container}>
+      <div className={styles.background_Addon}></div>
+      <div className={styles.background_AddonB}></div>
       <div className={styles.Header_container}>
         <Header />
       </div>
@@ -140,7 +142,7 @@ const Upload = () => {
           data-aos-delay="100"
         >
           <motion.h2 whileHover={{ scale: 1.05, rotate: 0.5 }}>
-            Uplaod Your Models
+            Upload Your Models
           </motion.h2>
           <div className={styles.line}></div>
           <motion.p whileHover={{ scale: 1.02, rotate: 0.25 }}>
