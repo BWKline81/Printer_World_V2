@@ -257,7 +257,13 @@ const Contracting = () => {
                   >
                     {item.Ques}
                   </motion.h2>
-                  <i class="fa-solid fa-chevron-down"></i>
+                  <i
+                    class={
+                      FAQopen[index] === true
+                        ? "fa-solid fa-caret-up"
+                        : "fa-solid fa-caret-down"
+                    }
+                  ></i>
                 </motion.div>
                 <motion.div
                   onClick={() => handleFAQ(index)}

@@ -39,7 +39,7 @@ const HomeIntroSec = () => {
         "Have an idea but no model? Our expert team can design a model from your ideas and bring it to life with our 3D printers.",
       img: PreMadeImage,
       delay: 600,
-      link: "/products",
+      link: "/contact",
       cardType: "Dark",
     },
   ];
